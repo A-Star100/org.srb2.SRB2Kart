@@ -107,7 +107,7 @@ modules:
     build-options:
       env:
         LDFLAGS: "-L/app/lib -L/app/lib64"
-        CPPFLAGS: "-I/app/include -I/app/include/SDL2"
+        CPPFLAGS: "-I/app/include -I/app/include/SDL2" # hack so compiler can find sdl_mixer.h
         CFLAGS: "-O3 -std=gnu17 -I/app/include -I/app/include/SDL2"
         CXXFLAGS: "-O3 -std=gnu++17 -I/app/include -I/app/include/SDL2"
         PKG_CONFIG_PATH: "/app/lib/pkgconfig:/app/share/pkgconfig"
